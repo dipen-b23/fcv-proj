@@ -1,5 +1,4 @@
 import os
-os.environ.setdefault('QT_QPA_PLATFORM','offscreen')
 from pathlib import Path
 import pytest
 from src.image_processing import load_image

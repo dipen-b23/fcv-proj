@@ -2,7 +2,6 @@
 <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#31596b"/></marker></defs>
 <rect width="1000" height="660" fill="#f4f8fa"/>
 <line x1="235.0" y1="105" x2="500.0" y2="175" stroke="#31596b" stroke-width="2" marker-end="url(#arrow)"/>
-<text x="373.5" y="132.0" font-family="sans-serif" font-size="13" fill="#31596b">Qt workers</text>
 <line x1="765.0" y1="105" x2="500.0" y2="175" stroke="#31596b" stroke-width="2" marker-end="url(#arrow)"/>
 <line x1="500.0" y1="255" x2="190.0" y2="330" stroke="#31596b" stroke-width="2" marker-end="url(#arrow)"/>
 <line x1="500.0" y1="255" x2="500.0" y2="330" stroke="#31596b" stroke-width="2" marker-end="url(#arrow)"/>
@@ -11,8 +10,8 @@
 <line x1="500.0" y1="420" x2="500.0" y2="525" stroke="#31596b" stroke-width="2" marker-end="url(#arrow)"/>
 <line x1="810.0" y1="420" x2="500.0" y2="525" stroke="#31596b" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="60" y="30" width="350" height="75" rx="12" fill="#ffffff" stroke="#188c79" stroke-width="2"/>
-<text x="235.0" y="57" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#153345">Desktop workspace</text>
-<text x="235.0" y="78" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#153345">PySide6 views, controls, corner editing</text>
+<text x="235.0" y="57" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#153345">Streamlit workspace</text>
+<text x="235.0" y="78" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#153345">Browser views, controls, corner editing</text>
 <rect x="590" y="30" width="350" height="75" rx="12" fill="#ffffff" stroke="#188c79" stroke-width="2"/>
 <text x="765.0" y="57" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#153345">Command-line interface</text>
 <text x="765.0" y="78" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#153345">Headless, same CV pipeline</text>

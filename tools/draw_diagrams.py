@@ -18,13 +18,13 @@ def diagram(name,boxes,links,width=1000,height=660):
 
 def main():
     diagram('architecture.svg',[
-        (60,30,350,75,['Desktop workspace','PySide6 views, controls, corner editing']),
+        (60,30,350,75,['Streamlit workspace','Browser views, controls, corner editing']),
         (590,30,350,75,['Command-line interface','Headless, same CV pipeline']),
         (285,175,430,80,['Shared processing modules','Scan pipeline / OCR / document workflows']),
         (60,330,260,90,['CV and quality modules','Contours + homography','Five modes and diagnostics']),
         (370,330,260,90,['Local OCR engine','Tesseract TXT / TSV / PDF','Installed language data']),
         (680,330,260,90,['Export','Images / TXT / searchable PDF','Aligned text and page numbers']),
-        (285,525,430,80,['Local history and document pages','SQLite + image / OCR snapshots','Persistent order; no network API'])],[(0,2,'Qt workers'),(1,2,''),(2,3,''),(2,4,''),(2,5,''),(3,6,''),(4,6,''),(5,6,'')])
+        (285,525,430,80,['Local history and document pages','SQLite + image / OCR snapshots','Persistent order; no network API'])],[(0,2,''),(1,2,''),(2,3,''),(2,4,''),(2,5,''),(3,6,''),(4,6,''),(5,6,'')])
     diagram('pipeline.svg',[
         (70,25,390,76,['Acquire + validate','EXIF, bounds, original-pixel coordinates']),
         (70,145,390,76,['Detect + rank quadrilaterals','Canny / Otsu / HSV + Hough']),
