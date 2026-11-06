@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="660" viewBox="0 0 1000 660">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#31596b"/></marker></defs>
+<rect width="1000" height="660" fill="#f4f8fa"/>
+<line x1="265.0" y1="101" x2="265.0" y2="145" stroke="#31596b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="460" y1="183.0" x2="570" y2="183.0" stroke="#31596b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="521.0" y="175.0" font-family="sans-serif" font-size="13" fill="#31596b">inspect / fail</text>
+<line x1="265.0" y1="221" x2="265.0" y2="275" stroke="#31596b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="271.0" y="240.0" font-family="sans-serif" font-size="13" fill="#31596b">accepted</text>
+<line x1="745.0" y1="221" x2="265.0" y2="275" stroke="#31596b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="511.0" y="240.0" font-family="sans-serif" font-size="13" fill="#31596b">apply</text>
+<line x1="265.0" y1="351" x2="265.0" y2="405" stroke="#31596b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="460" y1="443.0" x2="570" y2="443.0" stroke="#31596b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="265.0" y1="481" x2="265.0" y2="535" stroke="#31596b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="25" width="390" height="76" rx="12" fill="#ffffff" stroke="#188c79" stroke-width="2"/>
+<text x="265.0" y="52" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#153345">Acquire + validate</text>
+<text x="265.0" y="73" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#153345">EXIF, bounds, original-pixel coordinates</text>
+<rect x="70" y="145" width="390" height="76" rx="12" fill="#ffffff" stroke="#188c79" stroke-width="2"/>
+<text x="265.0" y="172" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#153345">Detect + rank quadrilaterals</text>
+<text x="265.0" y="193" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#153345">Canny / Otsu / HSV + Hough</text>
+<rect x="570" y="145" width="350" height="76" rx="12" fill="#ffffff" stroke="#188c79" stroke-width="2"/>
+<text x="745.0" y="172" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#153345">Manual corners</text>
+<text x="745.0" y="193" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#153345">Fallback or boundary adjustment</text>
+<rect x="70" y="275" width="390" height="76" rx="12" fill="#ffffff" stroke="#188c79" stroke-width="2"/>
+<text x="265.0" y="302" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#153345">Validate + perspective warp</text>
+<text x="265.0" y="323" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#153345">Ordered corners, 3 x 3 homography</text>
+<rect x="70" y="405" width="390" height="76" rx="12" fill="#ffffff" stroke="#188c79" stroke-width="2"/>
+<text x="265.0" y="432" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#153345">Enhance + compare</text>
+<text x="265.0" y="453" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#153345">Five modes and user parameters</text>
+<rect x="570" y="405" width="350" height="76" rx="12" fill="#ffffff" stroke="#188c79" stroke-width="2"/>
+<text x="745.0" y="432" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#153345">Quality + stage inspection</text>
+<text x="745.0" y="453" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#153345">Input/output diagnostics and real images</text>
+<rect x="70" y="535" width="390" height="76" rx="12" fill="#ffffff" stroke="#188c79" stroke-width="2"/>
+<text x="265.0" y="562" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#153345">Export document</text>
+<text x="265.0" y="583" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#153345">Images / OCR text / searchable PDF</text>
+</svg>

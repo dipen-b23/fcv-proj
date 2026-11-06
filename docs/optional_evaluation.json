@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-02",
+  "engine": "tesseract 5.3.4",
+  "scope": "One generated clean English printed-text fixture; not real-camera or multilingual accuracy. Whitespace, punctuation and case normalized before edit distance.",
+  "reference": "SMARTSCAN OCR TEST\nOffline document scanning\nInvoice number 2026\nTotal amount 1250",
+  "recognized": "SMARTSCAN OCR TEST\nOffline document scanning\nInvoice number 2026\n\nTotal amount 1250",
+  "reference_characters": 82,
+  "character_edits": 0,
+  "character_error_rate": 0.0,
+  "reference_words": 12,
+  "word_edits": 0,
+  "word_error_rate": 0.0,
+  "engine_mean_confidence": 95.94,
+  "pdf_pages": 2,
+  "searchable_text_on_all_pages": true,
+  "numbering_verified": true,
+  "queue_restart_verified": true,
+  "history_text_search_verified": true,
+  "batch_statuses": [
+    "saved",
+    "manual_required"
+  ]
+}

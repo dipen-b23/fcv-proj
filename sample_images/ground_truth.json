@@ -1,0 +1,220 @@
+{
+  "normal": {
+    "corners": [
+      [
+        370,
+        90
+      ],
+      [
+        1030,
+        90
+      ],
+      [
+        1030,
+        1020
+      ],
+      [
+        370,
+        1020
+      ]
+    ],
+    "kind": "synthetic"
+  },
+  "tilted": {
+    "corners": [
+      [
+        430,
+        70
+      ],
+      [
+        1100,
+        250
+      ],
+      [
+        870,
+        1030
+      ],
+      [
+        220,
+        840
+      ]
+    ],
+    "kind": "synthetic"
+  },
+  "perspective": {
+    "corners": [
+      [
+        390,
+        150
+      ],
+      [
+        1030,
+        65
+      ],
+      [
+        1140,
+        980
+      ],
+      [
+        230,
+        1030
+      ]
+    ],
+    "kind": "synthetic"
+  },
+  "bright_background": {
+    "corners": [
+      [
+        390,
+        150
+      ],
+      [
+        1030,
+        65
+      ],
+      [
+        1140,
+        980
+      ],
+      [
+        230,
+        1030
+      ]
+    ],
+    "kind": "synthetic"
+  },
+  "dark_background": {
+    "corners": [
+      [
+        390,
+        150
+      ],
+      [
+        1030,
+        65
+      ],
+      [
+        1140,
+        980
+      ],
+      [
+        230,
+        1030
+      ]
+    ],
+    "kind": "synthetic"
+  },
+  "low_contrast": {
+    "corners": [
+      [
+        390,
+        150
+      ],
+      [
+        1030,
+        65
+      ],
+      [
+        1140,
+        980
+      ],
+      [
+        230,
+        1030
+      ]
+    ],
+    "kind": "synthetic"
+  },
+  "noisy": {
+    "corners": [
+      [
+        390,
+        150
+      ],
+      [
+        1030,
+        65
+      ],
+      [
+        1140,
+        980
+      ],
+      [
+        230,
+        1030
+      ]
+    ],
+    "kind": "synthetic"
+  },
+  "blurred": {
+    "corners": [
+      [
+        390,
+        150
+      ],
+      [
+        1030,
+        65
+      ],
+      [
+        1140,
+        980
+      ],
+      [
+        230,
+        1030
+      ]
+    ],
+    "kind": "synthetic"
+  },
+  "shadows": {
+    "corners": [
+      [
+        390,
+        150
+      ],
+      [
+        1030,
+        65
+      ],
+      [
+        1140,
+        980
+      ],
+      [
+        230,
+        1030
+      ]
+    ],
+    "kind": "synthetic"
+  },
+  "multiple_objects": {
+    "corners": [
+      [
+        390,
+        150
+      ],
+      [
+        1030,
+        65
+      ],
+      [
+        1140,
+        980
+      ],
+      [
+        230,
+        1030
+      ]
+    ],
+    "kind": "synthetic"
+  },
+  "partial_page": {
+    "corners": null,
+    "kind": "partial: manual inspection required"
+  },
+  "no_document": {
+    "corners": null,
+    "kind": "synthetic negative"
+  }
+}

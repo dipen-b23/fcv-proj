@@ -1,0 +1,5 @@
+SMARTSCAN OCR TEST
+Offline document scanning
+Invoice number 2026
+
+Total amount 1250

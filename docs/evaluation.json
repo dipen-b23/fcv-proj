@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-02",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "dependencies": {
+    "numpy": "2.3.5",
+    "opencv-python-headless": "4.11.0.86",
+    "PySide6": "6.8.3",
+    "Pillow": "12.3.0",
+    "reportlab": "4.4.9",
+    "pytest": "8.3.5",
+    "pypdf": "6.10.0"
+  },
+  "scope": "Deterministic synthetic fixtures only; timings are single observations including quality analysis, not a hardware benchmark. No real-camera detection accuracy is asserted.",
+  "cases": [
+    {
+      "case": "normal",
+      "detected": true,
+      "strategy": "Hough intersections",
+      "confidence": 0.94,
+      "polygon_iou": 0.99742,
+      "elapsed_ms": 346.28,
+      "input_quality": 95.2,
+      "output_quality": 91.8
+    },
+    {
+      "case": "tilted",
+      "detected": true,
+      "strategy": "Canny",
+      "confidence": 0.926,
+      "polygon_iou": 0.99663,
+      "elapsed_ms": 283.2,
+      "input_quality": 94.4,
+      "output_quality": 92.3
+    },
+    {
+      "case": "perspective",
+      "detected": true,
+      "strategy": "Canny",
+      "confidence": 0.937,
+      "polygon_iou": 0.9966,
+      "elapsed_ms": 438.1,
+      "input_quality": 95.6,
+      "output_quality": 95.5
+    },
+    {
+      "case": "bright_background",
+      "detected": true,
+      "strategy": "Hough intersections",
+      "confidence": 0.811,
+      "polygon_iou": 0.9889,
+      "elapsed_ms": 569.79,
+      "input_quality": 85.0,
+      "output_quality": 95.7
+    },
+    {
+      "case": "dark_background",
+      "detected": true,
+      "strategy": "Canny",
+      "confidence": 0.937,
+      "polygon_iou": 0.99627,
+      "elapsed_ms": 528.39,
+      "input_quality": 93.9,
+      "output_quality": 95.6
+    },
+    {
+      "case": "low_contrast",
+      "detected": true,
+      "strategy": "Hough intersections",
+      "confidence": 0.821,
+      "polygon_iou": 0.99063,
+      "elapsed_ms": 398.0,
+      "input_quality": 74.1,
+      "output_quality": 83.3
+    },
+    {
+      "case": "noisy",
+      "detected": true,
+      "strategy": "Canny",
+      "confidence": 0.937,
+      "polygon_iou": 0.99808,
+      "elapsed_ms": 560.84,
+      "input_quality": 93.5,
+      "output_quality": 92.5
+    },
+    {
+      "case": "blurred",
+      "detected": true,
+      "strategy": "Hough intersections",
+      "confidence": 0.937,
+      "polygon_iou": 0.99504,
+      "elapsed_ms": 322.97,
+      "input_quality": 71.1,
+      "output_quality": 84.0
+    },
+    {
+      "case": "shadows",
+      "detected": true,
+      "strategy": "Inverted Otsu",
+      "confidence": 0.937,
+      "polygon_iou": 0.99687,
+      "elapsed_ms": 401.79,
+      "input_quality": 89.8,
+      "output_quality": 93.2
+    },
+    {
+      "case": "multiple_objects",
+      "detected": true,
+      "strategy": "Canny",
+      "confidence": 0.937,
+      "polygon_iou": 0.9966,
+      "elapsed_ms": 588.5,
+      "input_quality": 96.0,
+      "output_quality": 95.5
+    },
+    {
+      "case": "partial_page",
+      "detected": false,
+      "strategy": "none",
+      "confidence": 0.0,
+      "polygon_iou": null,
+      "elapsed_ms": 49.8,
+      "input_quality": 97.4,
+      "output_quality": null
+    },
+    {
+      "case": "no_document",
+      "detected": false,
+      "strategy": "none",
+      "confidence": 0.0,
+      "polygon_iou": null,
+      "elapsed_ms": 33.23,
+      "input_quality": 42.4,
+      "output_quality": null
+    }
+  ]
+}

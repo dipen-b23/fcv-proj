@@ -1,0 +1,9 @@
+Verified 2 November 2026, Linux x86_64 / CPython 3.12.14.
+Fresh venv created without --system-site-packages.
+requirements-dev.txt installed successfully.
+pip check: No broken requirements found.
+Actual GUI main.main(): exit 0 after a timed offscreen Qt event loop.
+CLI perspective image scan: exit 0, produced 911x921 PNG.
+Windows desktop and physical webcam remain local verification items.
+
+SmartScan 2 verification: pinned runtime/test requirements installed, pip check passed, actual advanced GUI entry point exited 0, searchable CLI exited 0 and its PDF text contained SMARTSCAN. Native Tesseract 5.3.4 was available locally; Python pip does not install that native engine.
