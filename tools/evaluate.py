@@ -2,7 +2,6 @@
 import os,sys,json,time,platform,tempfile
 from datetime import date
 from pathlib import Path
-os.environ.setdefault('QT_QPA_PLATFORM','offscreen')
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import cv2,numpy as np
 from src.image_processing import load_image,resize_longest
@@ -29,11 +28,7 @@ def main():
                 canvas=np.full((430,480,3),245,np.uint8);thumb,_=resize_longest(im,380);h,w=thumb.shape[:2];canvas[45:45+h,(480-w)//2:(480-w)//2+w]=thumb
                 cv2.putText(canvas,title,(12,26),0,.48,(40,50,60),1,cv2.LINE_AA);panels.append(canvas)
     sheet=np.vstack([np.hstack(panels[i:i+2]) for i in range(0,len(panels),2)]);save_image(sheet,DOCS/'results_contact_sheet.jpg')
-    evidence={'date':date.today().isoformat(),'platform':platform.platform(),'python':platform.python_version(),'dependencies':{n:version(n) for n in ['numpy','opencv-python-headless','PySide6','Pillow','reportlab','pytest','pypdf']},'scope':'Deterministic synthetic fixtures only; timings are single observations including quality analysis, not a hardware benchmark. No real-camera detection accuracy is asserted.','cases':rows}
+    evidence={'date':date.today().isoformat(),'platform':platform.platform(),'python':platform.python_version(),'dependencies':{n:version(n) for n in ['numpy','opencv-python-headless','streamlit','Pillow','reportlab','pytest','pypdf']},'scope':'Deterministic synthetic fixtures only; timings are single observations including quality analysis, not a hardware benchmark. No real-camera detection accuracy is asserted.','cases':rows}
     (DOCS/'evaluation.json').write_text(json.dumps(evidence,indent=2),encoding='utf-8')
-    from PySide6.QtWidgets import QApplication
-    from src.advanced_gui import AdvancedWindow as MainWindow
-    temporary=tempfile.TemporaryDirectory(prefix='smartscan-ui-eval-');os.environ['SMARTSCAN_DATA_DIR']=temporary.name
-    app=QApplication.instance() or QApplication([]);window=MainWindow();window.set_source(hero[0],'perspective.png');window.accept_result(hero[1]);window.sync_actions();window.show();app.processEvents();window.grab().save(str(DOCS/'workspace.png'));window.close();app.processEvents();temporary.cleanup()
     print(json.dumps(rows,indent=2))
 if __name__=='__main__':main()

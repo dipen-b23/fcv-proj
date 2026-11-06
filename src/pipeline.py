@@ -1,4 +1,4 @@
-"""Orchestration shared by the desktop workspace, CLI and tests."""
+"""Orchestration shared by the Streamlit workspace, CLI and tests."""
 from dataclasses import dataclass
 import time
 from .document_detection import detect_document,boundary_overlay

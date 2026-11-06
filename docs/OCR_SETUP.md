@@ -18,7 +18,7 @@ Alternatively set a path for the current PowerShell session before starting Smar
 
 ```powershell
 $env:TESSERACT_CMD="C:\Program Files\Tesseract-OCR\tesseract.exe"
-.\.venv\Scripts\python.exe main.py
+.\.venv\Scripts\python.exe -m streamlit run streamlit_app.py
 ```
 
 ## Ubuntu / Debian

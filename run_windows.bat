@@ -6,5 +6,5 @@ if not exist .venv\Scripts\python.exe (
   pause
   exit /b 1
 )
-.venv\Scripts\python.exe main.py
+.venv\Scripts\python.exe -m streamlit run streamlit_app.py
 if errorlevel 1 pause

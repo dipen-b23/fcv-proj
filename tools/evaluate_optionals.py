@@ -2,7 +2,6 @@
 from pathlib import Path
 import os,sys,json,tempfile,subprocess,re
 from datetime import date
-os.environ.setdefault('QT_QPA_PLATFORM','offscreen')
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import cv2,numpy as np
 from PIL import Image,ImageDraw,ImageFont
@@ -39,10 +38,5 @@ def main():
         metrics['queue_restart_verified']=again.queue_ids()==[record['id'],record['id']];metrics['history_text_search_verified']=len(again.list('1250'))==1
         rows=process_batch([ROOT/'sample_images'/'perspective.png',ROOT/'sample_images'/'no_document.png'],Path(folder)/'batch',ocr=True,store=store)
         metrics['batch_statuses']=[r['status'] for r in rows]
-        os.environ['SMARTSCAN_DATA_DIR']=str(Path(folder)/'ui')
-        from PySide6.QtWidgets import QApplication
-        from src.advanced_gui import AdvancedWindow
-        app=QApplication.instance() or QApplication([]);window=AdvancedWindow();window.set_source(image,'ocr_test_page.png');window.accept_result(result);window.ocr_result=recognized;window.show_ocr();window.sync_actions();window.tabs.setCurrentIndex(window.ocr_tab_index);window.show();app.processEvents();window.grab().save(str(DOCS/'ocr_workspace.png'))
-        window.tabs.setCurrentIndex(window.wipe_tab_index);window.wipe_slider.setValue(50);app.processEvents();window.grab().save(str(DOCS/'comparison_workspace.png'));window.close();app.processEvents()
     (DOCS/'optional_evaluation.json').write_text(json.dumps(metrics,indent=2),encoding='utf-8');(DOCS/'OCR_Demo.txt').write_text(recognized.text,encoding='utf-8');print(json.dumps(metrics,indent=2))
 if __name__=='__main__':main()

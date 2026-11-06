@@ -181,7 +181,7 @@ The independent technique laboratory demonstrates alternatives without changing 
 
 Figure 3. Actual offscreen capture of the implemented desktop workspace, showing the supplied perspective fixture.
 
-![Figure 3. Actual offscreen capture of the implemented desktop workspace, showing the supplied perspective fixture.](workspace.png)
+*Historical desktop screenshot: Figure 3. Actual offscreen capture of the implemented desktop workspace, showing the supplied perspective fixture.. See the archived PDF report.*
 
 The workspace provides original and processed views, a boundary overlay, drag-adjustable corner points and explicit processing actions. Tabs expose real intermediate images, independent FCV experiments, common-warp mode comparison and a quality report. Sliders take effect when Update enhancement is clicked. Automatic boundary failure leaves the output empty and image export disabled; the user can select corners manually.
 
@@ -219,7 +219,7 @@ The document queue contains at most 20 page references and persists across resta
 
 Figure 4. Actual OCR/text interface after recognition of the generated English test page.
 
-![Figure 4. Actual OCR/text interface after recognition of the generated English test page.](ocr_workspace.png)
+*Historical desktop screenshot: Figure 4. Actual OCR/text interface after recognition of the generated English test page.. See the archived PDF report.*
 
 The OCR evaluation used tesseract 5.3.4, selected language eng and a single text-block layout. Its clean generated fixture contained 12 reference words (82 characters after normalization). Case, punctuation and whitespace were normalized before computing edit distance. No real-camera or multilingual performance is inferred from this fixture.
 
